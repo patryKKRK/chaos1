@@ -4,16 +4,16 @@ variable "vpc_id" {
 
 }
 variable "private_cidr" {
-  type = "list"
+  type    = "list"
   default = ["172.124.5.0/24", "172.124.6.0/24"]
 }
 
 variable "public_cidr" {
-  type = "list"
+  type    = "list"
   default = ["172.124.1.0/24", "172.124.2.0/24"]
 }
 
-variable "public_subnet_id_1"{
+variable "public_subnet_id_1" {
 
 }
 

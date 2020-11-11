@@ -1,9 +1,9 @@
 resource "aws_eip" "ip1" {
-  vpc      = true
+  vpc = true
 }
 
 resource "aws_eip" "ip2" {
-  vpc      = true
+  vpc = true
 }
 
 resource "aws_nat_gateway" "gw1" {

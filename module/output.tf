@@ -18,11 +18,11 @@ output "ip2_output" {
   value = aws_eip.ip2.id
 }
 
-output "ig_id"{
+output "ig_id" {
   value = aws_internet_gateway.gw.id
 }
 
-output "rt1"{
+output "rt1" {
   value = aws_route_table.internet_gateway_route.id
 
 }
@@ -39,6 +39,6 @@ output "ng_id1" {
   value = aws_nat_gateway.gw1.id
 }
 
-output "ng_id2"{
+output "ng_id2" {
   value = aws_nat_gateway.gw2.id
 }

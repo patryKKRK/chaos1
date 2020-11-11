@@ -21,7 +21,7 @@ resource "aws_route_table" "nat1" {
   vpc_id = var.vpc_id
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block     = "0.0.0.0/0"
     nat_gateway_id = var.ng_id1
   }
 }
@@ -36,7 +36,7 @@ resource "aws_route_table" "nat2" {
   vpc_id = var.vpc_id
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block     = "0.0.0.0/0"
     nat_gateway_id = var.ng_id2
   }
 }
