@@ -7,11 +7,11 @@ resource "aws_eip" "ip2" {
 }
 
 resource "aws_nat_gateway" "gw1" {
-  allocation_id = var.ip1
-  subnet_id     = var.public_subnet_id_1
+  allocation_id = aws_eip.ip1.id
+  subnet_id     = aws_subnet.public1.id
 }
 
 resource "aws_nat_gateway" "gw2" {
-  allocation_id = var.ip2
-  subnet_id     = var.public_subnet_id_2
+  allocation_id = aws_eip.ip2.id
+  subnet_id     = aws_subnet.public2.id
 }
