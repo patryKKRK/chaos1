@@ -3,7 +3,6 @@ output "vpc_id" {
 }
 output "public_output_1" {
   value = aws_subnet.public1.id
-
 }
 
 output "public_output_2" {
@@ -24,13 +23,12 @@ output "ig_id" {
 
 output "rt1" {
   value = aws_route_table.internet_gateway_route.id
-
 }
 
 output "nat1_id" {
   value = aws_route_table.nat1.id
-
 }
+
 output "nat2_id" {
   value = aws_route_table.nat2.id
 }

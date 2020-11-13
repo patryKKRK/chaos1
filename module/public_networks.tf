@@ -3,9 +3,7 @@ resource "aws_subnet" "public1" {
   cidr_block        = var.public_cidr[0]
   availability_zone = "eu-central-1a"
 
-  tags = {
-    Name = "public1"
-  }
+  tags = var.tags
 }
 
 resource "aws_subnet" "public2" {
@@ -13,7 +11,5 @@ resource "aws_subnet" "public2" {
   cidr_block        = var.public_cidr[1]
   availability_zone = "eu-central-1b"
 
-  tags = {
-    Name = "public2"
-  }
+  tags = var.tags
 }

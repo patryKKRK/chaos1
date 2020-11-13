@@ -15,16 +15,8 @@ variable "cidr_vpc" {
 variable "tags" {
   type = "map"
   default = {
-    internet_gateway = "main"
-    private_subnet_1 = "private1"
-    private_subnet_2 = "private2"
-    public_subnet_1  = "public1"
-    public_subnet_2  = "public2"
-    vpc              = "vpc1"
+    environment = "dev"
+    application  = "test"
 
   }
-}
-
-variable "tag" {
-
 }
