@@ -16,7 +16,7 @@ variable "tags" {
   type = "map"
   default = {
     environment = "dev"
-    application  = "test"
+    application = "test"
 
   }
 }
